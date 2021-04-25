@@ -1,10 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/41b61beb6d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
-  <body></body>
+
+  <body>
+    <div class="card-main">
+      <div class="card" style="width: 35em">
+        <div class="container">
+          <div class="search-bar">
+            <form id="find-city">
+              <input
+                type="city"
+                id="city"
+                autocomplete="off"
+                placeholder="Search your city"
+              />
+              <button type="button" class="btn btn-primary">Search</button>
+            </form>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="weather-info">
+                <div class="card" style="width: 10rem">
+                  <h1>18°C</h1>
+                  <h2 id="city-name">Cardiff</h2>
+                </div>
+                <div class="card" style="width: 10rem">
+                  <p class="info">
+                    Precipitation: 2%
+                    <br />
+                    Humidity: 72%
+                    <br />
+                    Wind: 4 mph
+                  </p>
+                </div>
+                <div class="card" style="width: 10rem">
+                  <p class="date" id="current-date"></p>
+                  <p class="time" id="current-time"></p>
+                  <p class="weather-type" id="description">Sunny</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="sun-image">
+                <img src="Images/Sun.jpg" /> Placeholder image
+              </div>
+            </div>
+          </div>
+
+          <div class="future-weather">
+            <div class="row">
+              <div class="col-3">
+                <div class="card text-center">
+                  Later
+                  <br />
+                  <i class="fas fa-cloud"
+                    ><br />
+                    Cloudy
+                  </i>
+                  12°C
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card text-center">
+                  Tonight
+                  <br />
+                  <i class="fas fa-cloud-rain">
+                    <br />
+                    Rain
+                  </i>
+                  8°C
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card text-center">
+                  Tomorrow
+                  <br />
+                  <i class="fas fa-cloud-sun-rain">
+                    <br />
+                    Drizzle with sun
+                  </i>
+                  11°C
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card text-center">
+                  Monday
+                  <br />
+                  <i class="fas fa-sun">
+                    <br />
+                    Sunny
+                  </i>
+                  19°C
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
 </html>
