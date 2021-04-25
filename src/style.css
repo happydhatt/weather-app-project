@@ -1,0 +1,71 @@
+body {
+  font-family: serif;
+}
+
+h1 {
+  color: green;
+}
+h2 {
+  color: #0b5ed7;
+}
+h4 {
+  font-weight: lighter;
+  margin: 0;
+}
+
+form {
+  margin-top: 12px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+#precipitation {
+  margin: 0;
+  margin-bottom: 0;
+}
+
+#humidity {
+  margin: 0;
+  margin-bottom: 0;
+}
+
+#wind {
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.card-main {
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 50px;
+}
+.card {
+  margin-bottom: 15px;
+  background-color: #e4fbff !important;
+}
+.container {
+  background-color: white;
+}
+.info {
+  font-size: small;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+p.date {
+  font-weight: bold;
+  color: #0b5ed7;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p.time {
+  margin-bottom: 0;
+}
+p.weather-type {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0;
+}
